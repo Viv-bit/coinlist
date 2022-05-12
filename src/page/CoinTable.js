@@ -124,7 +124,6 @@ function CoinTable() {
 
     const finalCoinList = [];
 
-    console.log(Object.keys(response.data.rates).length);
     Object.keys(response.data.rates).filter((rateKey) => {
       const sourceCoinIndex = coins.findIndex(({ key }) => {
         return rateKey.includes(key);
